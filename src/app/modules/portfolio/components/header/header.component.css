@@ -66,10 +66,3 @@
 }
 
 
-:host-context(body.light-theme) .header nav ul li a:hover {
-    box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
-}
-
-:host-context(body.light-theme) .header .logo span {
-    color: #a8d5ba;
-}

@@ -90,11 +90,6 @@
     transition: all 0.3s ease;
 }
 
-:host-context(body.light-theme) .container .img-perfil .picture-perfil {
-    border: 2px solid #a8d5ba;
-    box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
-    
-}
 
 :host-context(body.light-theme) .gradient-text {
     color: #b63eb0;

@@ -20,12 +20,13 @@ body {
 }
 
 body.light-theme {
-    background-color: #fdfcfb;
+    background-color: #a8d5ba;
     color: #1c1c1e;
 }
 
 body.light-theme .btn {
     background-color: #a8d5ba;
+    border: 1px solid #ffffff;
 }
 
 body.light-theme .redes-sociais a i {
