@@ -20,16 +20,18 @@ body {
 }
 
 body.light-theme {
-    background-color: #f5f5f5;
+    background-color: #fdfcfb;
     color: #1c1c1e;
 }
 
 body.light-theme .btn {
-    background-color: #ffa5c9;
-    color: #4a004e;
-    box-shadow: 0 0 10px #ffa5c9;
+    background-color: #a8d5ba;
 }
 
 body.light-theme .redes-sociais a i {
-    color: #000 !important;
+    color: #1c1c1e !important;
+}
+
+body.light-theme .redes-sociais a i:hover {
+    color: #b63eb0 !important;
 }

@@ -80,7 +80,7 @@
     bottom: 20px;
     right: 20px;
     z-index: 999;
-    background-color: #b84cff;
+    background-color: #b63eb0;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -88,5 +88,15 @@
     cursor: pointer;
     font-size: 18px;
     transition: all 0.3s ease;
+}
+
+:host-context(body.light-theme) .container .img-perfil .picture-perfil {
+    border: 2px solid #a8d5ba;
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
+    
+}
+
+:host-context(body.light-theme) .gradient-text {
+    color: #b63eb0;
 }
 

@@ -1,15 +1,13 @@
 .header {
     padding: 50px 40px;
     background-color: inherit;
-}
-
-.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container .logo {
+
+.header .logo {
     padding-left: 30px;
 
     span {
@@ -17,7 +15,7 @@
     }
 }
 
-.container .logo a {
+.header .logo a {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
@@ -26,14 +24,14 @@
     position: relative;
 }
 
-.container .logo a:after {
+.header .logo a:after {
     content: url(../../../../../assets/images/img-logo.png);
     position: absolute;
     height: 100%;
     right: -35px;
 }
 
-.container .logo a:hover {
+.header .logo a:hover {
     transform: scale(1.05);
 }
 
@@ -57,9 +55,22 @@
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.header nav ul li a:hover{
+.header nav ul li a:hover {
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
     transform: translateY(-2px);
 }
 
+:host-context(body.light-theme) .header nav ul li a {
+    background-color: #a8d5ba;
+    color: #1c1c1e;
+    transition: all 0.3s
+}
 
+
+:host-context(body.light-theme) .header nav ul li a:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 213, 0.5);
+}
+
+:host-context(body.light-theme) .header .logo span {
+    color: #a8d5ba;
+}
