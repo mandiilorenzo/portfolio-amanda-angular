@@ -1,0 +1,11 @@
+<section id="skills" class="skills animation">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills-section">
+        <div *ngFor="let skill of skills" class="card">
+            <i [class]="skill.icon"></i>
+            <span class="type-animation">{{ skill.name }}</span>
+        </div>
+
+    </div>
+
+</section>
