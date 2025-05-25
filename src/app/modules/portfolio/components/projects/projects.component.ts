@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit } from '@angular/core';
 import { ScrollRevealService } from '../../../../services/scroll-reveal.service';
 
+
 @Component({
   selector: 'app-projects',
   imports: [CommonModule],

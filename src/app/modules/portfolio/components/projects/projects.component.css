@@ -51,7 +51,7 @@ h2 {
     margin-right: 20px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid #ff00ff;
-    border-radius: 1rem;
+    border-radius: 12px;
     padding: 30px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
@@ -100,4 +100,23 @@ h2 {
 
 .project-card a:hover {
     text-decoration: underline;
+}
+
+:host-context(.light-theme) h2 {
+    color: #1c1c1e;
+}
+
+:host-context(.light-theme) .tabs button {
+    color: #1c1c1e;
+}
+
+
+:host-context(.light-theme) .project-card {
+    background: #a8d5ba;
+}
+
+:host-context(.light-theme) h3, 
+:host-context(.light-theme) a,
+:host-context(.light-theme) p {
+    color: #1c1c1e;
 }

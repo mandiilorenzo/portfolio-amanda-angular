@@ -1,5 +1,5 @@
 .skills {
-    min-height: 86vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,6 +10,7 @@
     font-size: 32px;
     color: #ffffff;
     margin-bottom: 40px;
+    margin-top: 80px;
 }
 
 .skills-section {
@@ -21,6 +22,7 @@
 .card {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     width: 100%;
     max-width: 400px;
@@ -33,6 +35,7 @@
     padding: 30px 20px;
     text-align: center;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 
 }
 
@@ -47,3 +50,18 @@
     margin-bottom: 10px;
     font-weight: 500;
 }
+
+:host-context(.light-theme) h2 {
+    color: #1c1c1e;
+}
+
+:host-context(.light-theme) .card {
+    background-color: #a8d5ba;
+    color: #1c1c1e;
+    border: 1px solid #ff00ff;
+}
+
+:host-context(.light-theme) .card:hover {
+    border-color: #ff00ff;
+}
+
