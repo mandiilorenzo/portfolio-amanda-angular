@@ -1,4 +1,5 @@
 import { AfterViewInit, Component } from '@angular/core';
+import { ScrollRevealService } from '../../../../services/scroll-reveal.service';
 
 @Component({
   selector: 'app-about',
@@ -8,19 +9,11 @@ import { AfterViewInit, Component } from '@angular/core';
 })
 export class AboutComponent implements AfterViewInit {
 
-  async ngAfterViewInit() {
-    if (typeof window !== 'undefined') {
-      const ScrollReveal = (await import('scrollreveal')).default;
-      ScrollReveal().reveal('.animation', {
-        distance: '50px',
-        duration: 1000,
-        origin: 'bottom',
-        reset: true,
-        viewFactor: 0.4,
-        mobile: true,
-        cleanup: true,
-      });
-    }
+  constructor(private scrollRevealService: ScrollRevealService) { }
 
+  async ngAfterViewInit() {
+    await this.scrollRevealService.reveal('.animation');
   }
+
 }
+

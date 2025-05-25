@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { AfterViewInit } from '@angular/core';
+import { ScrollRevealService } from '../../../../services/scroll-reveal.service';
 
 @Component({
   selector: 'app-skills',
@@ -24,18 +25,9 @@ export class SkillsComponent implements AfterViewInit {
     { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' }
   ];
 
-  async ngAfterViewInit() {
-    if (typeof window !== 'undefined') {
-      const ScrollReveal = (await import('scrollreveal')).default;
-      ScrollReveal().reveal('.animation', {
-        distance: '50px',
-        duration: 1000,
-        origin: 'bottom',
-        reset: true,
-        viewFactor: 0.4,
-        mobile: true,
-        cleanup: true,
-      });
+  constructor(private scrollRevealService: ScrollRevealService) { }
+  
+    async ngAfterViewInit() {
+      await this.scrollRevealService.reveal('.animation');
     }
-  }
 }

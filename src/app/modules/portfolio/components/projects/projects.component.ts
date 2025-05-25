@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, AfterViewInit } from '@angular/core';
+import { ScrollRevealService } from '../../../../services/scroll-reveal.service';
 
 @Component({
   selector: 'app-projects',
@@ -50,19 +51,10 @@ export class ProjectsComponent implements AfterViewInit {
     return this.Projects.filter(p => p.stack === this.activeTab);
   }
 
+  constructor(private scrollRevealService: ScrollRevealService) { }
+
   async ngAfterViewInit() {
-    if (typeof window !== 'undefined') {
-      const ScrollReveal = (await import('scrollreveal')).default;
-      ScrollReveal().reveal('.animation', {
-        distance: '50px',
-        duration: 1000,
-        origin: 'bottom',
-        reset: true,
-        viewFactor: 0.4,
-        mobile: true,
-        cleanup: true,
-      });
-    }
+    await this.scrollRevealService.reveal('.animation');
   }
 
 }
