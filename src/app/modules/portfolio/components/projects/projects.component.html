@@ -1,0 +1,19 @@
+<section id="projects" class="container animation">
+    <h2>Meus Projetos</h2>
+    <div class="tabs">
+        <button *ngFor="let tab of tabs" (click)="setActiveTab(tab)" [class.active]="activeTab === tab">
+            {{ tab }}
+        </button>
+    </div>
+
+    <div class="card">
+        <div *ngFor="let project of filteredProjects" class="project-card">
+            <img [src]="project.image" alt="{{ project.title }}" />
+            <div class="project-info">
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.description }}</p>
+                    <a [href]="project.link" rel="noopener noreferrer" target="_blank">Ver Projeto</a>
+            </div>
+        </div>
+    </div>
+</section>

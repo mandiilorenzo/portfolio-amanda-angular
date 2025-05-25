@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
 })
-export class SkillsComponent {
+export class SkillsComponent implements AfterViewInit {
   skills = [
     { name: 'HTML', icon: 'devicon-html5-plain colored' },
     { name: 'CSS', icon: 'devicon-css3-plain colored' },
