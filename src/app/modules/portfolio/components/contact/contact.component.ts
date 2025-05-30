@@ -1,18 +1,17 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { AnimationOptions } from 'ngx-lottie';
+import { ScrollRevealService } from '../../../../services/scroll-reveal.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [ ],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-  options: AnimationOptions = {
-    path: 'assets/animations/manifest.json', 
-    loop: true,
-    autoplay: true,
-  };
+  constructor(private scrollRevealService: ScrollRevealService) { }
+
+  async ngAfterViewInit() {
+    await this.scrollRevealService.reveal('.animation');
+  }
 }
