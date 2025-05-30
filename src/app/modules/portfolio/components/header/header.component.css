@@ -63,7 +63,13 @@
 :host-context(body.light-theme) .header nav ul li a {
     background-color: #a8d5ba;
     color: #1c1c1e;
-    transition: all 0.3s
+    transition: all 0.3s;
+}
+
+:host-context(body.light-theme) .header nav ul li a:hover {
+    background-color: #8ed4aa;
+    color: #1c1c1e;
+    box-shadow: 0 0 15px #8ed4aa;
 }
 
 

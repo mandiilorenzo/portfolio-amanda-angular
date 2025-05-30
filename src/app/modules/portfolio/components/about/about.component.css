@@ -82,3 +82,13 @@
     background-color: #a8d5ba;
     color: #1c1c1e;
 }
+
+:host-context(body.light-theme) .btn-cv {
+    background-color: #b63eb0;
+}
+
+:host-context(body.light-theme) .btn-cv:hover {
+    transform: scale(1.05);
+    box-shadow: none;
+    color: #ffffff;
+}

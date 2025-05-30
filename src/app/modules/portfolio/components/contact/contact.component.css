@@ -46,6 +46,23 @@
 
 .contact-links a:hover {
     background-color: #ff00ff;
-    color: #121212;
+    color: #1c1c1e;
     box-shadow: 0 0 15px #ff00ff;
+}
+
+:host-context(.light-theme) .section h2{
+    color: #1c1c1e;
+}
+
+:host-context(.light-theme) .contact-links a {
+    border-color: #8ed4aa;
+    color: #1c1c1e;
+    background-color: #a8d5ba;
+    transition: all 0.3s ease;
+}
+
+:host-context(.light-theme) .contact-links a:hover {
+    background-color: #8ed4aa;
+    color: #1c1c1e;
+    box-shadow: 0 0 15px #8ed4aa;
 }

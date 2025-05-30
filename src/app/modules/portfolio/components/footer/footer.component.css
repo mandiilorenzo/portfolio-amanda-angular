@@ -26,3 +26,17 @@
     transform: scale(1.2);
     color: #8ed4aa;
 }
+
+:host-context(.light-theme) .footer {
+    color: #1c1c1e;
+    background-color: #8ed4aa;
+    border: none;
+}
+
+:host-context(.light-theme) .footer-icons a {
+    color: #1c1c1e;
+}
+
+:host-context(.light-theme) .footer-icons a:hover {
+    color: #ffffff;
+}
