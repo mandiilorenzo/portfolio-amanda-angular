@@ -78,6 +78,25 @@
     box-shadow: 0 0 15px #ff00ff;
 }
 
+@media (max-width: 768px) {
+    .about {
+        padding: 30px;
+    }
+
+    .abou t h2 {
+        font-size: 24px;
+    }
+
+    .terminal {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .terminal-body {
+        font-size: 18px;
+    }
+}
+
 :host-context(body.light-theme) .about {
     background-color: #a8d5ba;
     color: #1c1c1e;
