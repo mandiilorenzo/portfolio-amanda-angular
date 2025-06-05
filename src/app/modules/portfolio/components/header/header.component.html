@@ -1,14 +1,22 @@
 <header class="header">
-        <div class="logo">
-            <a>Amanda <span>Di Lorenzo</span></a>
-        </div>
+    <div class="logo">
+        <a>Amanda <span>Di Lorenzo</span></a>
+    </div>
 
-        <nav class="nav">
-            <ul>
-                <li><a href="#about" (click)="scrollToSection($event, 'about')">Sobre mim</a></li>
-                <li><a href="#skills" (click)="scrollToSection($event, 'skills')">Habilidades</a></li>
-                <li><a href="#projects" (click)="scrollToSection($event, 'projects')">Meus projetos</a></li>
-                <li><a href="#contact" (click)="scrollToSection($event, 'contact')">Contato</a></li>
-            </ul>
-        </nav>
+    <nav class="nav" [ngClass]="{ 'active': isMenuOpen }">
+        <input id="menu-hamburguer" type="checkbox" />
+
+        <label for="menu-hamburguer">
+            <div class="menu">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+        
+        <ul>
+            <li><a href="#about" (click)="scrollToSection($event, 'about')">Sobre mim</a></li>
+            <li><a href="#skills" (click)="scrollToSection($event, 'skills')">Habilidades</a></li>
+            <li><a href="#projects" (click)="scrollToSection($event, 'projects')">Meus projetos</a></li>
+            <li><a href="#contact" (click)="scrollToSection($event, 'contact')">Contato</a></li>
+        </ul>
+    </nav>
 </header>
