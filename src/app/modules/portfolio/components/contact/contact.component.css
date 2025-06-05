@@ -50,7 +50,18 @@
     box-shadow: 0 0 15px #ff00ff;
 }
 
-:host-context(.light-theme) .section h2{
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    .img-contact {
+        max-width: 300px;
+        margin-top: 30px;
+    }
+}
+
+:host-context(.light-theme) .section h2 {
     color: #1c1c1e;
 }
 
