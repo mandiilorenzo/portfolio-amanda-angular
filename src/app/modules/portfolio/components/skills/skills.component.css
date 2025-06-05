@@ -51,6 +51,18 @@
     font-weight: 500;
 }
 
+@media (max-width: 768px) {
+    .skills-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills h2 {
+        font-size: 28px;
+    }
+}
+
+
+
 :host-context(.light-theme) h2 {
     color: #1c1c1e;
 }
