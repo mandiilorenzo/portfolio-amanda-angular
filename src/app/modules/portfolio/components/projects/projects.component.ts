@@ -24,7 +24,7 @@ export class ProjectsComponent implements AfterViewInit {
     {
       title: 'Portfólio Amanda',
       description: 'Portfólio pessoal atualizado desenvolvido com Angular, com o objetivo de apresentar projetos, habilidades técnicas e trajetória profissional.',
-      image: 'assets/images/portfolio-amanda.png',
+      image: 'assets/images/portfolio-dev.gif',
       link: 'https://mandilorenzo.github.io/portfolio/',
       stack: 'Front-end'
     },

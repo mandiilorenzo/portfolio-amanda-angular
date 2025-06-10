@@ -126,6 +126,11 @@
         padding: 30px;
     }
 
+    .header .logo {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
     .header .menu {
         display: block;
     }
