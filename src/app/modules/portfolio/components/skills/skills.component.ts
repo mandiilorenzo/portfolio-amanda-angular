@@ -22,7 +22,10 @@ export class SkillsComponent implements AfterViewInit {
     { name: 'Node.js', icon: 'devicon-nodejs-line' },
     { name: 'Express.js', icon: 'devicon-express-original colored' },
     { name: 'Prisma', icon: 'devicon-prisma-plain colored' },
-    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' }
+    { name: 'PostgreSQL', icon: 'devicon-postgresql-plain' },
+    { name: 'MongoDB', icon: 'devicon-mongodb-plain colored' },
+    { name: 'Docker', icon: 'devicon-docker-plain colored'},
+    { name: 'Python', icon: 'devicon-python-plain colored' }
   ];
 
   constructor(private scrollRevealService: ScrollRevealService) { }
